@@ -1,0 +1,51 @@
+html {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: lightgray;  
+    /* color: #323232; */
+}
+
+body {
+    height: 100vh;
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom right, rgb(75, 26, 155), rgb(111, 5, 5)); /* comment out if it looks weird*/
+}
+
+h2 {
+    font-family: 'Proza Libre', sans-serif;
+}
+
+a {
+    color: lightgray;
+    /* color: #323232; */
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Nav */
+nav {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgray; /* color: #323232; */
+}
+
+#logo {
+    margin-right: auto;
+}
+
+.navigation-items {
+    margin-left: auto;
+    list-style: none;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.navigation-item {
+    display: inline-block;
+    margin-right: 15px;
+}
+
