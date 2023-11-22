@@ -49,3 +49,58 @@ nav {
     margin-right: 15px;
 }
 
+/* About Me*/
+#about-me {
+    padding: 1rem 0;
+}
+
+.about-me-container {
+    display: flex;
+    align-items: center;
+}
+
+.about-me-text-container {
+    flex: 1;
+    padding-right: 20px; /* Adjust the padding as needed */
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 25%; /* Adjust the width as needed */
+}
+
+#official-photo {
+    width: 100%;
+    border-radius: 8px; /* Optional: Add border radius for a rounded image */
+}
+
+#family-photo {
+    display: none;
+}
+
+@media only screen  and (max-width: 600px) {
+    .about-me-container {
+        flex-direction: column;
+    }
+
+    .image-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    #official-photo,
+    #family-photo {
+        width: 40%;
+        margin: 1rem 0;
+        border-radius: 8px; /* Optional: Add border radius for a rounded image */
+    }
+
+    #family-photo {
+        display: block;
+    }
+}
