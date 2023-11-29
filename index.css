@@ -13,6 +13,7 @@ body {
     display: flex;
     flex-direction: column;
     background: linear-gradient(to bottom right, rgb(75, 26, 155), rgb(111, 5, 5)); /* comment out if it looks weird*/
+    background-attachment: fixed;
 }
 
 h2 {
@@ -24,6 +25,19 @@ a {
     /* color: #323232; */
     text-decoration: none;
     font-weight: 600;
+}
+
+.text-link {
+    color: yellow;
+    text-decoration: underline;
+}
+
+.text-link:hover {
+    color: lightgreen;
+}
+
+.text-link:active {
+    color: red;
 }
 
 /* Nav */
@@ -102,5 +116,33 @@ nav {
 
     #family-photo {
         display: block;
+    }
+}
+
+/* Projects */
+
+/* Default styles for the summary element */
+details summary {
+    margin-left: 20px;
+    list-style: circle; /* Use a disc as the bullet point */
+    display: list-item; /* Display as a list item to show the bullet point */
+    cursor: pointer; /* Show a pointer cursor on hover for the summary */
+}
+
+/* Default styles for the images inside the details */
+details img {
+    max-width: 30%; /* Make the image responsive within its container */
+}
+
+/* Additional styles to arrange images inline */
+details img {
+    display: inline-block;
+    margin-right: 10px; /* Adjust the margin between images as needed */
+}
+
+@media only screen and (max-width: 600px) {
+    details img {
+        margin: 10px auto;
+        max-width: 100%;
     }
 }
