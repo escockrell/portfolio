@@ -61,6 +61,8 @@ nav {
 .navigation-item {
     display: inline-block;
     margin-right: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 /* About Me*/
@@ -120,8 +122,6 @@ nav {
 }
 
 /* Projects */
-
-/* Default styles for the summary element */
 details summary {
     margin-left: 20px;
     list-style: circle; /* Use a disc as the bullet point */
@@ -129,19 +129,25 @@ details summary {
     cursor: pointer; /* Show a pointer cursor on hover for the summary */
 }
 
-/* Default styles for the images inside the details */
-details img {
-    max-width: 30%; /* Make the image responsive within its container */
+.sudoku-image-container {
+    max-width: 45%; /* Make the image responsive within its container */
 }
 
-/* Additional styles to arrange images inline */
-details img {
+.sudoku-image-container h3 {
+    margin: 5px auto;
+}
+
+.sudoku-image-container img {
+    max-width: 100%;
+}
+
+.sudoku-image-container {
     display: inline-block;
-    margin-right: 10px; /* Adjust the margin between images as needed */
+    margin: 10px; /* Adjust the margin between images as needed */
 }
 
 @media only screen and (max-width: 600px) {
-    details img {
+    .sudoku-image-container {
         margin: 10px auto;
         max-width: 100%;
     }
