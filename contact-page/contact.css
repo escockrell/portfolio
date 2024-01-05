@@ -1,0 +1,74 @@
+/* Styles specific to the contact page */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label  {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type='text'],
+input[type='email'] {
+    width: 50%;
+    border-radius: 5px;
+    background: lightgray;
+    height: 32px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 50%;
+    border-radius: 5px;
+    background: lightgray;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: black;
+    height: 200px;
+    min-height: 150px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.flat-button {
+    color: lightgray;
+    background: 0 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 10px;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+}
+
+.flat-button:hover {
+    cursor: pointer;
+    color: lightgreen;
+    background-color: darkslategrey;
+}
+
+.flat-button:active {
+    color: red;
+}
+
+@media only screen and (max-width: 600px) {
+    h2,
+    p {
+        text-align: center;
+    }
+
+    input[type='text'],
+    input[type='email'],
+    textarea {
+        width: 100%
+    }
+}

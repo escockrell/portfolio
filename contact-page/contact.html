@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="./contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ec2aa28181.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('xyJa_Sn9ieZ_eKqdC');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_vo3k13d', 'template_e128ldj', this)
+                    .then(function() {
+                        console.log('Message sent successfully!');
+                        alert('Message successfully sent!')
+                    }, function(error) {
+                        console.log('MESSAGE FAILED...', error);
+                        alert('Failed to send the message, please try again')
+                    });
+            });
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <h2 id="logo"><a href="../index.html#">Ethan Cockrell</a></h2>
+        <ul class="navigation-items">
+            <li class="navigation-item">
+                <a href="../index.html#about-me">About Me</a>
+            </li>
+            <li class="navigation-item">
+                <a href="../index.html#projects">Projects</a>
+            </li>
+            <li class="navigation-item">
+                <a href="../index.html#skills">Skills</a>
+            </li>
+            <li class="navigation-item">
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Contact</h2>
+        <p>If you would like to contact me with any comments, questions or work opportunities, please fill out the form below. Thanks!</p>
+        <form id="contact-form">
+            <input type="hidden" name="contact_number">
+
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="subject">Subject:</label>
+            <input type="text" name="subject" id="subject">
+
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" required></textarea>
+
+            <input type="submit" value="Send" class="flat-button">
+        </form>
+    </main>
+</body>
+</html>

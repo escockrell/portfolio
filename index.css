@@ -65,7 +65,7 @@ nav {
     margin-bottom: 5px;
 }
 
-/* About Me*/
+/* About Me */
 #about-me {
     padding: 1rem 0;
 }
@@ -201,3 +201,24 @@ details summary {
     position: relative;
 }
 
+/* Footer */
+:root {
+    --skills-distance-from-top: 0; /* default value, overwritten by script.js*/
+    --body-distance-from-top: 0; /* default value, overwritten by script.js*/
+    --footer-top-margin: 0; /* default value, overwritten by script.js*/
+}
+
+footer {
+    width: 100%;
+    height: 51px;
+    margin-top: 98px; /* default value, overwritten by script.js*/
+    border-top: lightgray 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+footer a {
+    font-size: 30px;
+    margin: 10px 20px;
+}

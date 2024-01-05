@@ -9,10 +9,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ec2aa28181.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <nav>
-        <h2 id="logo">Ethan Cockrell</h2>
+        <h2 id="logo"><a href="#">Ethan Cockrell</a></h2>
         <ul class="navigation-items">
             <li class="navigation-item">
                 <a href="#about-me">About Me</a>
@@ -21,10 +22,10 @@
                 <a href="#projects">Projects</a>
             </li>
             <li class="navigation-item">
-                <a href="#">Skills</a>
+                <a href="#skills">Skills</a>
             </li>
             <li class="navigation-item">
-                <a href="#">Contact</a>
+                <a href="./contact-page/contact.html">Contact</a>
             </li>
         </ul>
     </nav>
@@ -43,8 +44,8 @@
                     <p>
                         I'm currently working on transitioning careers to the civilian sector as a software
                         developer. I'm working through a Full-Stack Engineer certification via 
-                        <a class="text-link" href="https://www.codecademy.com/career-journey/full-stack-engineer">Codecademy</a>
-                        , with relevant coursework including:
+                        <a class="text-link" href="https://www.codecademy.com/career-journey/full-stack-engineer" target="_blank" rel="noopener noreferrer">
+                            Codecademy</a>, with relevant coursework including:
                         HTML, CSS, JavaScript, Git & GitHub, React, Redux, Express.js, PostreSQL, Swagger, OpenAPI,
                         and DevOps Fundamentals. As of November 2023, I am 29% complete with an expected completion
                         date of Spring 2024.
@@ -73,7 +74,10 @@
                     has a tab that walks you through how the puzzle was solved step by step.
                 </p>
                 <p>
-                    Check this out on my GitHub page: <a class="text-link" href="https://github.com/escockrell/SudokuSolver">SudokuSolver</a>
+                    Check this out on my GitHub page: 
+                    <a class="text-link" href="https://github.com/escockrell/SudokuSolver" target="_blank" rel="noopener noreferrer">
+                        SudokuSolver
+                    </a>
                 </p>
                 <div class="sudoku-image-container">
                     <h3>Initial Puzzle</h3>
@@ -129,5 +133,14 @@
             </div>
         </section>
     </main>
+    <footer>
+        <a href="https://www.linkedin.com/in/ethan-cockrell/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/escockrell" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-github"></i>
+        </a>
+    </footer>
+    
 </body>
 </html>
